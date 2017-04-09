@@ -13,7 +13,7 @@ depends_x86_64+=('lib32-libxt' 'lib32-libxtst' 'lib32-alsa-lib')
 makedepends=('unzip')
 source=("https://scratch.mit.edu/scratchr2/static/sa/Scratch-$_ver.air" "$pkgname.desktop" "$pkgname.png" "$pkgname.xml" "x-$pkgname-project.png")
 sha1sums=('c096866c40c63f36ccf11539433eb7ae66797adf'
-			'54d603c20b35daa24a700fec465e6cc3b2645406'
+			'24d3849d3e38836b0b116a2e620a173f1770f13b'
 			'bfca77daa1a9079f2197d98509ca4a33b3246df1'
 			'2d45707fd12c709e21fa74b85f6c7b7dfe0d47a2'
 			'211b6b6ca9e987327632446f1bb15908babbcfae')
@@ -34,6 +34,6 @@ package() {
 
   install -Dm 644 "$pkgname.desktop" $pkgdir/usr/share/applications/$pkgname.desktop
   install -Dm 644 "$pkgname.xml" $pkgdir/usr/share/mime/packages/$pkgname.xml
-  install -Dm 644 "$pkgname.png" $pkgdir/usr/share/pixmaps/$pkgname.png
+  install -Dm 644 "$pkgname.png" $pkgdir/usr/share/pixmaps/$pkgname-editor.png
   install -Dm 644 "x-$pkgname-project.png" $pkgdir/usr/share/pixmaps/x-$pkgname-project.png
 }

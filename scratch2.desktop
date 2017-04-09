@@ -4,6 +4,6 @@ Comment=You can program your own interactive stories, games, and animations
 Exec=scratch2 %f
 Terminal=false
 Type=Application
-Icon=scratch2
+Icon=scratch2-editor
 Categories=Development;Education;Programming;
 MimeType=application/x-scratch2-project
